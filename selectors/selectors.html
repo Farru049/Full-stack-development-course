@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demonstration</title>
+    <style>
+        /* Element Selector - targets all <p> elements */
+        p {
+            color: red;
+            font-size: 16px;
+        }
+
+        /* Class Selector - targets elements with class="highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID Selector - targets element with id="main-title" */
+        #main-title {
+            color: green;
+            font-size: 24px;
+        }
+
+        /* Attribute Selector - targets elements with type="email" */
+        input[type="email"] {
+            border: 2px solid red;
+        }
+
+        /* Grouping Selector - applies same style to <h1> and <h2> */
+        h1, h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        /* Descendant Selector - targets <li> inside <ul> */
+        ul li {
+            color: orange;
+        }
+
+        /* Child Selector - targets <li> that are direct children of <ol> */
+        ol > li {
+            color: teal;
+        }
+
+        /* Pseudo-class Selector - targets first <p> element */
+        p:first-of-type {
+            border: 1px solid black;
+        }
+
+        /* Pseudo-class Selector - applies style on hover */
+        button:hover {
+            background-color: lightgreen;
+        }
+
+        /* Pseudo-element Selector - targets first letter of a paragraph */
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+            font-weight: Italic;
+            font-family:Helvetica;
+        }
+
+        /* Universal Selector - targets all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Adjacent Sibling Selector - targets <p> that comes immediately after <h2> */
+        h2 + p {
+            color: darkblue;
+        }
+
+        /* General Sibling Selector - targets all <p> that are siblings of <h2> */
+        h2 ~ p {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">CSS Selectors Demo</h1>
+
+    <h2>1. Element Selector</h2>
+    <p>This is a paragraph. The element selector applies to all <code>&lt;p&gt;</code> elements.</p>
+    
+    <h2>2. Class Selector</h2>
+    <p class="highlight">This is a highlighted paragraph using the class selector.</p>
+    
+    <h2>3. ID Selector</h2>
+    <p id="main-title">This heading has a unique ID and is styled using the ID selector.</p>
+    
+    <h2>4. Attribute Selector</h2>
+    <p>Enter your email below:</p>
+    <input type="email" placeholder="Email">
+    
+    <h2>5. Grouping Selector</h2>
+    <h1>This is a grouped heading (h1 and h2 share styles).</h1>
+    <h2>This is another grouped heading.</h2>
+    
+    <h2>6. Descendant Selector</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+    <h2>7. Child Selector</h2>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <h2>8. Pseudo-class Selector</h2>
+    <p>This is the first paragraph, which gets special styling with the <code>:first-of-type</code> pseudo-class.</p>
+
+    <h2>9. Hover Pseudo-class Selector</h2>
+    <button>Hover over me!</button>
+
+    <h2>10. Pseudo-element Selector</h2>
+    <p>Look at the first letter of this paragraph; it has a larger font size and different color, thanks to <code>::first-letter</code>.</p>
+
+    <h2>11. Sibling Selectors</h2>
+    <p>This is the first paragraph after an <code>&lt;h2&gt;</code>, styled with the adjacent sibling selector.</p>
+    <p>This is another paragraph following the same <code>&lt;h2&gt;</code>, styled with the general sibling selector.</p>
+</body>
+</html>

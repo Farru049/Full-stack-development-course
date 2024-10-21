@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Overview and Contact Form</title>
+</head>
+<body>
+    <h1>Hover over the link and button below to see the tooltips</h1>
+    
+    <!-- Tooltip-Enabled Button -->
+    <button title="Button to Submit the form">Submit</button><br><br>
+    
+    <!-- Tooltip-Enabled Link -->
+    <a href="https://www.google.com" title="This will take you to Google">Visit Google</a>
+    
+    <!-- Financial Overview Table with Caption -->
+    <table border="1" cellspacing="0" cellpadding="12" width="70%">
+        <caption>Monthly Financial Overview</caption>
+        <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Money</th>
+                <th scope="col">Spent</th>
+                <th scope="col">Remaining</th>
+                <th scope="col">Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$2000</td>
+                <td>$1500</td>
+                <td>$500</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$2000</td>
+                <td>$1200</td>
+                <td>$800</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$2000</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td>$1000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Contact Form with Fieldset -->
+    <h2>Contact Us</h2>
+    <form action="/submit-form" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Name Field -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name..." required><br><br>
+            
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Your email..." required><br><br>
+            
+            <!-- Subject Field -->
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" placeholder="Subject..."><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Message</legend>
+            
+            <!-- Message Field -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Write your message.." rows="5" cols="40" required></textarea><br><br>
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <form>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Please choose an option--</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <!-- Add more options as needed -->
+        </select>
+    </form><br>
+
+    <img src="C:\Users\Farhaan Ali\Pictures\spencer-davis-ilQmlVIMN4c-unsplash.jpg" alt="Monument">
+    <h2>Progress Overview</h2>
+    <table border="1" cellspacing="0" cellpadding="10" width="70%">
+        <tr>
+            <td>Progress</td>
+            <td>
+                <table border="1" width="70%">
+                    <tr>
+                        <td bgcolor="green" width="70%"></td> <!-- Adjust width for progress -->
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

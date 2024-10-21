@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff; /* Fixed typo */
+}
+
+.navbar-container {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Common styles for nav items */
+.nav-items {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Styling for the unordered list */
+.nav-items ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* Styling for list items */
+.nav-items li {
+    display: inline;
+}
+
+/* Styling for links in the navbar */
+.nav-items a {
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+/* Styling for the login button */
+.login-btn {
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: darkblue;
+}
+.nav-items1 {
+    background-color: rgba(31, 87, 28, 0.756); /* Background for the whole nav container */
+    border-radius: 5px; /* Rounded corners for the nav container */
+    padding: 10px; /* Padding around the nav container */
+    width: 100%; /* Ensure the nav container takes the full width */
+    max-width: 1200px; /* Limit the max width to prevent it from extending to the end of the page */
+    margin: 0 ; /* Center the container */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.nav-items1 ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-items1 li {
+    margin: 0; /* No margin for list items */
+}
+
+.nav-items1 a {
+    display: block; /* Make links block-level elements */
+    text-decoration: none; /* Remove underline from links */
+    color: #ececec; /* Light text color */
+    padding: 10px; /* Padding for links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%; /* Ensure the link occupies full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.nav-items1 a:hover {
+    background-color: #4da14d; /* Change background color on hover */
+    border-radius: 5px; /* Maintain rounded corners on hover */
+}
+
+
+.login-btn1 {
+    background-color: #379412;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 1px;
+    border: 2px solid whitesmoke;
+    width:80px;
+}
+.nav-items2 {
+    background-color: rgba(31, 87, 28, 0.756); /* Background for the nav container */
+    border-radius: 5px; /* Rounded corners for the nav container */
+    padding: 10px; /* Padding around the nav container */
+    width: 100%; /* Ensure the nav container takes the full width */
+    max-width: 1200px; /* Limit the max width */
+    margin: 0; /* Center the container */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.nav-items2 ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Flex for horizontal layout */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.nav-items2 .dropdown {
+    position: relative; /* Positioning for dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Positioning dropdown */
+    background-color: rgba(31, 87, 28, 0.9); /* Dropdown background */
+    min-width: 160px; /* Minimum width of dropdown */
+    z-index: 1; /* Ensure dropdown appears above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: #fff; /* Text color for dropdown items */
+    padding: 10px; /* Padding for dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for full width */
+}
+
+.dropdown-content a:hover {
+    background-color: #4da14d; /* Background color on hover */
+}
+
+.login-btn2 {
+    background-color: #379412;
+    padding: 10px;
+    border: none;
+    width: 80px; /* Adjusted width */
+    border-radius: 0px;
+    color: white; /* Text color for login button */
+}

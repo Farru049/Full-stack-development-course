@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Global Box-Sizing */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightyellow;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            width: 300px; /* Increased width for better spacing */
+            padding: 20px; /* Increased padding */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Increased gap for better spacing */
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%; /* Make inputs full width of container */
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 400px) {
+            .card {
+                width: 90%; /* Make card take up 90% of viewport on small screens */
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>LogIn</h2>
+        <form action="/submit-form" method="POST">
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" required/>
+
+            <!-- Submit Button -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
